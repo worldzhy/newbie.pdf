@@ -35,12 +35,12 @@ export class PdfService {
       // Create pdf2pic converter
       const options = {
         quality: undefined,
-        format: 'jpg', // 输出格式
-        width: 596, // 宽度
-        height: 842, // 高度
-        density: 100, // 密度
-        savePath, // 输出目录
-        saveFilename: 'pic-', // 输出文件名前缀
+        format: 'jpg', // format of the output image
+        width: 596,
+        height: 842,
+        density: 100,
+        savePath,
+        saveFilename: 'pic-', // prefix for output file names
       };
       const convert = fromBuffer(params.buffer, options);
 
