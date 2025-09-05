@@ -40,7 +40,7 @@ export class PdfService {
         height: 842,
         density: 100,
         savePath,
-        saveFilename: 'pic-', // prefix for output file names
+        saveFilename: 'pic', // prefix for output file names
       };
       const convert = fromBuffer(params.buffer, options);
 
